@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img,svg{
+    display: block;
+}
+body{
+    font-family: 'Figtree';
+    font-size: 16px;
+    font-weight: 500;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    background-color: var(--yellow);
+}
+.container{
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    --mgin: 1rem 0;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    border-radius: 1rem;
+    box-shadow: 15px 15px var(--Black);
+    padding: 1rem;
+    margin: var(--mgin);
+}
+.image{
+    border-radius: 1rem;
+}
+button{
+    padding: 0.4rem;
+    font-weight: 800;
+    margin: var(--mgin);
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.publish{
+    margin-bottom: 1rem;
+}
+
+a{
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--Black);
+}
+a:hover,a:active{
+    color: var(--yellow);
+}
+.paragraph{
+    line-height: 1.5;
+    margin: var(--mgin);
+    color: var(--Grey);
+}
+.small-pic{
+    margin: var(--mgin);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 800;
+}
+@media(max-width:375px){
+    button{
+        padding: 0.5rem;
+    }
+
+    .container{
+        box-shadow: 10px 10px var(--Black);
+        margin: 1rem;
+    }
+    .container.a{
+        font-size: 1.25rem;
+    }
+}
